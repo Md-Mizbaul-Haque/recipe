@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe app</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>recipe app</h1>
+        <form>
+          <input
+            type="text"
+            placeholder="Search for recipe"
+            class="input-box"
+          />
+          <button type="submit" class="inputBtn">Search</button>
+        </form>
+      </nav>
+    </header>
+    
+    <!-- main container -->
+    <main>
+      <div class="defaultIcon" style="display: inline;"><i class="fa-solid fa-magnifying-glass"></i></div>
+      <h2 class="defaultMessage">Search for recipe</h2>
+      <section class="recipe-container"></section>
+    </main>
+    <!-- lightbox for full image -->
+     <div class="lightbox" >
+      <img src="" alt="Full image">
+     </div>
+
+     <!-- Recipe Instructions modal -->
+
+     <div class="recipeModal" style="display: none;">
+      <div class="recipeModalContent">
+        <button class="closeBtn">Close</button>
+        <h2 class="recipeTitle"></h2>
+        <p class="recipeInstructions"></p>
+      </div>
+     </div>
+    <script src="app2.js"></script>
+  </body>
+</html>
